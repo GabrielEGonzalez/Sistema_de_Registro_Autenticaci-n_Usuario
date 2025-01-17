@@ -1,13 +1,13 @@
 <?php
 
-print_r($_SERVER['REQUEST_URI']);
+require_once (__DIR__ . '/../app/controller/controlerhome.php');
 
-print_r($_SERVER['REQUEST_METHOD']);
+$url = $_SERVER['REQUEST_URI'];
+$metodo = $_SERVER['REQUEST_METHOD'];
 
-foreach ($_SERVER as $key => $value) {
-    echo "$key: ";
-    print_r($value);
-    echo "<br>";
 
+if($url === '/public'){
+  $inicio = new Controlerhome();
+  $inicio->home();
 }
 
