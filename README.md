@@ -2,8 +2,6 @@
 sistema web en PHP que permita a los usuarios registrarse, iniciar sesión y cerrar sesión.
 
 
-
-
 ---
 
 ### **Reto: Sistema de Registro y Autenticación de Usuarios**
