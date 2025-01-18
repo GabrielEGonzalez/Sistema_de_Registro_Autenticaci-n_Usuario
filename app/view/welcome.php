@@ -23,8 +23,8 @@
                     <h1 class="card-title text-center">¡Bienvenido!</h1>
                     <p class="card-text text-center">Este es tu portal de inicio.</p>
                     <div class="text-center">
-                        <form action="/public/Iniciar/"><button class="btn btn-primary">Iniciar Sesión</button></form>
-                        <form action="/public/Registrarse/"><button class="btn btn-secondary">Registrarse</button>
+                        <form action="/public/Iniciar"><button class="btn btn-primary">Iniciar Sesión</button></form>
+                        <form action="/public/Registrarse"><button class="btn btn-secondary">Registrarse</button>
                         </form>
                     </div>
                 </div>
