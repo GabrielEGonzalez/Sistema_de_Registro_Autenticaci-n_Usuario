@@ -1,13 +1,17 @@
 <?php
-    require_once (__DIR__ . '/../layouts/header.php');
+require_once(__DIR__ . '/../layouts/header.php');
 ?>
+<div class="contenedor">
+    <form action="" class="">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" placeholder="ingrese nombre">
 
-<form action="" class="form ">
-    <label for="hola">hola</label>
+        <label for="Correo">Correo Electronico:</label>
+        <input type="email" name="Correo" id="Correo" placeholder="ingrese Correo Electronico">
 
-</form>
+        <label for="password">Contraseña:</label>
+        <input type="password" name="password" id="password" placeholder="ingrese Contraseña">
 
-
-<?php
-    require_once (__DIR__ . '/../layouts/footer.php');
-?>
+        <input type="submit" value="Enviar">
+    </form>
+</div>

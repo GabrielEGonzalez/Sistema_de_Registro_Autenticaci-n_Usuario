@@ -11,6 +11,7 @@
             border-radius: 15px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             padding: 20px;
+            background-color: black;
         }
     </style>
 </head>
@@ -23,7 +24,7 @@
                     <h1 class="card-title text-center">¡Bienvenido!</h1>
                     <p class="card-text text-center">Este es tu portal de inicio.</p>
                     <div class="text-center">
-                        <form action="/public/Iniciar"><button class="btn btn-primary">Iniciar Sesión</button></form>
+                        <form action="/public/Iniciar" method="post"><button class="btn btn-primary">Iniciar Sesión</button></form>
                         <form action="/public/Registrarse"><button class="btn btn-secondary">Registrarse</button>
                         </form>
                     </div>
