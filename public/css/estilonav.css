@@ -20,11 +20,16 @@ body{
 
 .contenedor{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0.6rem;
-    border: 1px solid black;
 }
+
+.contenedor > div{
+    color: var(--color-primario);
+}
+
 header{
     background-color: var(--color-terciario);
     padding: 1rem;
@@ -61,31 +66,49 @@ form{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 1rem;
-    width: 400px;
-    height: 300px;
+    padding: 3rem;
     border-radius: 20px;
     text-align: right;
 }
 
-label{
-    border: 1px solid #1100ff;
-}
-
-form > input{
-    margin: 0.2rem;
-    width: 70%;
-    padding: 0.6rem;
-    border: none;
-    border-bottom: #1100ff 2px solid;
+.icon-contenedor{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: #1100ff 1px solid;
     background-color: #5f555546;
 }
 
+i{
+    padding: 0.2rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.icon-contenedor > input{
+    border: none;
+    color: var(--color-secundario);
+    outline: none;
+    background-color: transparent;
+    padding: 0.6rem;
+    
+}
+
+label{
+    padding: 0.3rem;
+}
+
 input[type="submit"]{
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
     border-radius: 20px;
     color: var(--color-Cuarto);
     background-color: var(--color-terciario);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
+
 input[type="text"]:focus{
     border: none;
     background-color: var(---color-secundario);
@@ -97,5 +120,9 @@ input[type="text"]:focus{
     }
     .contenedor{
         height: 70vh;
+    }
+
+    form{
+        padding: 1rem;
     }
 }
