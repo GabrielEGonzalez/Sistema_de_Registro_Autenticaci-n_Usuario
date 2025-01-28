@@ -12,5 +12,11 @@ if($url === '/public/'){
 }elseif($url === '/public/Iniciar'){
   $registro = new ControllerRegistro;
   $registro->login();
+}elseif($url === '/public/Registrar'){
+    $usuario = $_POST['nombre'];
+    $correo = $_POST['Correo'];
+    $pass = $_POST['password'];
+
+    echo " ".$usuario ."</br> ".$correo . "</br> ".$pass;
 }
 
