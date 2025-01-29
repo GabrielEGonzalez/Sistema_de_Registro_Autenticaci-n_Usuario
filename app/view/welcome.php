@@ -7,26 +7,41 @@
     <title>Portal de Inicio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <style>
+        body {
+            background-color: #1a1a1a; /* Fondo oscuro */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
         .card {
             border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            padding: 20px;
-            background-color: black;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            padding: 30px;
+            background-color: #000;
+            color: white;
+            text-align: center;
+        }
+
+        .btn-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
         }
     </style>
 </head>
 
 <body>
-    <div class="container mt-5">
+    <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-6">
+            <div class="col-md-6 col-lg-4">
                 <div class="card">
-                    <h1 class="card-title text-center">¡Bienvenido!</h1>
-                    <p class="card-text text-center">Este es tu portal de inicio.</p>
-                    <div class="text-center">
-                        <form action="/public/Iniciar" method="post"><button class="btn btn-primary">Iniciar Sesión</button></form>
-                        <form action="/public/Registrarse"><button class="btn btn-secondary">Registrarse</button>
-                        </form>
+                    <h1 class="card-title">¡Bienvenido!</h1>
+                    <div class="btn-container">
+                        <a href="/public/Iniciar" class="btn btn-primary btn-lg">Iniciar Sesión</a>
+                        <a href="/public/Registrar" class="btn btn-secondary btn-lg">Registrarse</a>
                     </div>
                 </div>
             </div>
