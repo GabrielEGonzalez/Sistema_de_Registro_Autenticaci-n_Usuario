@@ -11,8 +11,11 @@ class ControllerRegistro{
     }
 
     public function registro(): void{
-        require_once(__DIR__ . '/../view/auth/register.php');
         $usuario = new user();
         $usuario->craerUsuario();
+    }
+
+    public function viewregistro() : void {
+        require_once(__DIR__ . '/../view/auth/register.php');
     }
 }

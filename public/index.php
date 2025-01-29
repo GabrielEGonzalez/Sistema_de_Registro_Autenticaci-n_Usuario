@@ -14,9 +14,13 @@ if($url === '/public/'){
   $registro->login();
 }elseif($url === '/public/Registrar'){
     $registro = new ControllerRegistro();
+    $registro->viewregistro();
+}elseif($url === '/public/inicio' && $metodo === 'POST'){
+  if(isset($_POST['nombre']) && isset($_POST['Correo']) && isset($_POST['password'])){
+    $registro = new ControllerRegistro();
     $registro->registro();
-}elseif($url === '/public/inicio'){
-    echo "Usuario creado";
+  }
+  
 }else{
     echo "Error 404";
 }
